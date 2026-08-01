@@ -26,7 +26,7 @@ export default function WorkGrid() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <section id="work" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+    <section id="work" className="py-20 sm:py-0 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-12 sm:mb-20 text-balance">
         Recent Work
       </h2>

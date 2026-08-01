@@ -31,58 +31,60 @@ export default function WorkGrid() {
         Recent Work
       </h2>
 
-      <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         {projects.map((project, index) => (
-          <div
+          <Link
             key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="group cursor-pointer"
           >
-            {/* Card */}
-            <Link href={project.link} target="_blank" rel="noopener noreferrer">
+            <div
+              className="group cursor-pointer h-full border border-[#e5e5e5] rounded-xl p-5 sm:p-6 transition-all duration-500 ease-out transform hover:border-[#4338ca] hover:shadow-md hover:-translate-y-1 relative overflow-hidden"
+              style={{
+                backgroundColor: project.color,
+              }}
+            >
+              {/* Animated background orb */}
               <div
-                className="aspect-video rounded-2xl overflow-hidden mb-6 transition-all duration-500 ease-out transform group-hover:-translate-y-4"
+                className="absolute -top-8 -right-8 w-24 h-24 rounded-full blur-2xl opacity-20 transition-transform duration-500 group-hover:scale-110"
                 style={{
-                  backgroundColor: project.color,
-                  boxShadow: hoveredIndex === index ? '0 20px 40px rgba(0, 0, 0, 0.1)' : 'none',
+                  background: '#4338ca',
+                  pointerEvents: 'none',
                 }}
-              >
-                <div className="w-full h-full flex items-center justify-center relative">
-                  {/* Animated background orb */}
-                  <div
-                    className="absolute w-32 h-32 rounded-full blur-3xl opacity-30 transition-transform duration-500 group-hover:scale-110"
-                    style={{
-                      background: '#4338ca',
-                    }}
-                  />
+              />
 
-                  {/* View Pill */}
-                  <div
-                    className="absolute bottom-4 right-4 px-4 py-2 bg-white text-[#171717] font-mono text-xs uppercase tracking-widest rounded-full font-bold transition-all duration-500"
-                    style={{
-                      opacity: hoveredIndex === index ? 1 : 0,
-                      transform: hoveredIndex === index ? 'translateY(0)' : 'translateY(1rem)',
-                    }}
-                  >
-                    View
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            {/* Title & Category */}
-            <div className="space-y-2">
-              <h3 className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors">
-                {project.title}
-              </h3>
-              <div className="flex items-center gap-3">
-                <span className="font-mono text-xs uppercase tracking-widest text-[#737373]">
+              <div className="relative z-10 space-y-3 h-full flex flex-col">
+                {/* Category Label */}
+                <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#737373]">
                   {project.category}
                 </span>
+
+                {/* Title */}
+                <h3 className="font-serif text-base sm:text-lg md:text-lg font-light text-[#171717] group-hover:text-[#4338ca] transition-colors">
+                  {project.title}
+                </h3>
+
+                {/* One-line description */}
+                <p className="font-sans text-xs sm:text-sm text-[#737373] line-clamp-2 leading-relaxed flex-grow">
+                  {project.description}
+                </p>
+
+                {/* View Pill */}
+                <div
+                  className="inline-flex w-fit mt-auto px-3 sm:px-4 py-1.5 bg-white text-[#171717] font-mono text-[10px] sm:text-xs uppercase tracking-widest rounded-full font-medium transition-all duration-500"
+                  style={{
+                    opacity: hoveredIndex === index ? 1 : 0.6,
+                    transform: hoveredIndex === index ? 'translateY(0)' : 'translateY(0.5rem)',
+                  }}
+                >
+                  View
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

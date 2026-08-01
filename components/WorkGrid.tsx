@@ -20,14 +20,6 @@ const projects = [
     link: 'https://github.com/Kaveeshakavindi/steller_class_prediction',
     color: '#fef3c7',
   },
-  {
-    title: 'Synapse: Greenwashing Detection in Corporate ESG Reports',
-    category: 'PUBLISHED RESEARCH / NEURO-SYMBOLIC AI',
-    description:
-      'Converted unstructured ESG report data into a structured, validated dataset for a Neuro-Symbolic AI system, achieving 84% agreement (Cohen\'s κ = 0.678). Accepted at the 11th Future Technologies Conference (FTC) 2026.',
-    link: '#',
-    color: '#c7d2fe',
-  },
 ]
 
 export default function WorkGrid() {

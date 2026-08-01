@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import QuoteBreak from '@/components/QuoteBreak'
 import WorkGrid from '@/components/WorkGrid'
@@ -24,7 +23,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#fcfbf9]">
-      <Header />
       <Hero />
       <QuoteBreak />
       <ScrollReveal>

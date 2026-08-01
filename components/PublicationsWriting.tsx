@@ -6,7 +6,9 @@ const publications = [
   {
     type: 'Publication',
     title: 'Synapse: Greenwashing Detection in Corporate ESG Reports',
-    venue: 'FTC 2026 (Published Research)',
+    year: '2026',
+    methodologies: ['Neuro-Symbolic AI', 'Counterfactual Reasoning', 'Causality', 'Ontology Design', 'RAG'],
+    technologies: ['Mistral 7B', 'Claude Sonnet 4', 'GPT-4o', 'Python', 'FAISS', 'LangChain', 'Ollama'],
     link: '#',
   },
 ]
@@ -45,9 +47,9 @@ export default function PublicationsWriting() {
         {/* Publications */}
         <div>
           <h3 className="font-mono text-sm uppercase tracking-widest text-[#737373] mb-8">
-            Peer-Reviewed Publications
+            Publications
           </h3>
-          <div className="space-y-4">
+          <div className="space-y-8">
             {publications.map((pub, index) => (
               <Link
                 key={index}
@@ -56,13 +58,49 @@ export default function PublicationsWriting() {
                 rel="noopener noreferrer"
                 className="block group"
               >
-                <div className="flex flex-col lg:flex-row lg:items-baseline lg:gap-6 pb-4 border-b border-[#e5e5e5] hover:border-[#4338ca] transition-colors">
-                  <h4 className="font-serif text-lg lg:text-xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors flex-1">
-                    {pub.title}
-                  </h4>
-                  <p className="font-mono text-xs uppercase tracking-widest text-[#737373] mt-2 lg:mt-0">
-                    {pub.venue}
-                  </p>
+                <div className="pb-6 border-b border-[#e5e5e5] hover:border-[#4338ca] transition-colors space-y-4">
+                  <div className="flex flex-col lg:flex-row lg:items-baseline lg:gap-6">
+                    <h4 className="font-serif text-lg lg:text-xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors flex-1">
+                      {pub.title}
+                    </h4>
+                    <p className="font-mono text-xs uppercase tracking-widest text-[#737373] mt-2 lg:mt-0">
+                      {pub.year}
+                    </p>
+                  </div>
+
+                  {/* Methodologies Tags */}
+                  <div className="space-y-2">
+                    <p className="font-mono text-xs uppercase tracking-widest text-[#737373]">
+                      Methodologies
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {pub.methodologies.map((method, idx) => (
+                        <span
+                          key={idx}
+                          className="font-mono text-xs px-3 py-1 border border-[#e5e5e5] rounded text-[#171717]"
+                        >
+                          [{method}]
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Technologies Tags */}
+                  <div className="space-y-2">
+                    <p className="font-mono text-xs uppercase tracking-widest text-[#737373]">
+                      Technologies
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {pub.technologies.map((tech, idx) => (
+                        <span
+                          key={idx}
+                          className="font-mono text-xs px-3 py-1 border border-[#e5e5e5] rounded text-[#171717]"
+                        >
+                          [{tech}]
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </Link>
             ))}

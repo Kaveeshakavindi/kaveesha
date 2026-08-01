@@ -5,7 +5,7 @@ import { User } from 'lucide-react'
 export default function Hero() {
   return (
     <section className="relative pt-20 pb-20 sm:pt-32 px-4 sm:px-6 lg:px-12 overflow-hidden flex flex-col justify-center items-center bg-[#fcfbf9]">
-      <div className="relative z-10 max-w-2xl text-center space-y-6 sm:space-y-8">
+      <div className="relative z-10 max-w-2xl text-center  sm:space-y-8">
         {/* Title */}
         <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-[#171717] space-y-0">
           Hi! I&apos;m <span className="italic">Kaveesha</span> Fernando

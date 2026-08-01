@@ -28,8 +28,8 @@ export default function QuoteBreak() {
   }, [])
 
   return (
-    <section ref={ref} className="py-32 px-6 lg:px-12 max-w-4xl mx-auto opacity-0 text-center space-y-8">
-      <blockquote className="font-serif text-4xl lg:text-5xl italic font-light text-[#171717] leading-relaxed">
+    <section ref={ref} className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-4xl mx-auto opacity-0 text-center space-y-6 sm:space-y-8">
+      <blockquote className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl italic font-light text-[#171717] leading-relaxed">
         "All that we are is the result of what we have thought."
       </blockquote>
 

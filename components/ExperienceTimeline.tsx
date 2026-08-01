@@ -25,19 +25,19 @@ const experiences = [
 
 export default function ExperienceTimeline() {
   return (
-    <section id="research" className="py-32 px-6 lg:px-12 max-w-6xl mx-auto">
-      <h2 className="font-serif text-5xl lg:text-6xl font-light text-[#171717] mb-20 text-balance">
+    <section id="research" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-12 sm:mb-20 text-balance">
         Experience
       </h2>
 
-      <div className="space-y-16">
+      <div className="space-y-10 sm:space-y-16">
         {experiences.map((exp, index) => (
-          <div key={index} className="border-l-2 border-[#e5e5e5] pl-8 hover:border-[#4338ca] transition-colors duration-300 py-2">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:gap-8 mb-4">
-              <h3 className="font-serif text-2xl lg:text-3xl font-light text-[#171717] flex-1">
+          <div key={index} className="border-l-2 border-[#e5e5e5] pl-4 sm:pl-8 hover:border-[#4338ca] transition-colors duration-300 py-2">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 md:gap-8 mb-3 sm:mb-4">
+              <h3 className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-[#171717] flex-1">
                 {exp.role}
               </h3>
-              <p className="font-mono text-xs uppercase tracking-widest text-[#737373] mt-2 lg:mt-0">
+              <p className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#737373] mt-2 sm:mt-0">
                 {exp.period}
               </p>
             </div>
@@ -48,7 +48,7 @@ export default function ExperienceTimeline() {
 
             <ul className="space-y-2">
               {exp.highlights.map((highlight, i) => (
-                <li key={i} className="font-sans text-base text-[#737373] leading-relaxed">
+                <li key={i} className="font-sans text-sm sm:text-base text-[#737373] leading-relaxed">
                   • {highlight}
                 </li>
               ))}

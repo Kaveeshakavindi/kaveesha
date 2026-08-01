@@ -38,12 +38,12 @@ const blogs = [
 
 export default function PublicationsWriting() {
   return (
-    <section id="publications" className="py-32 px-6 lg:px-12 max-w-6xl mx-auto">
-      <h2 className="font-serif text-5xl lg:text-6xl font-light text-[#171717] mb-20 text-balance">
+    <section id="publications" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-12 sm:mb-20 text-balance">
         Publications & Writing
       </h2>
 
-      <div className="space-y-16">
+      <div className="space-y-12 sm:space-y-16">
         {/* Publications */}
         <div>
           <h3 className="font-mono text-sm uppercase tracking-widest text-[#737373] mb-8">
@@ -59,11 +59,11 @@ export default function PublicationsWriting() {
                 className="block group"
               >
                 <div className="pb-6 border-b border-[#e5e5e5] hover:border-[#4338ca] transition-colors space-y-4">
-                  <div className="flex flex-col lg:flex-row lg:items-baseline lg:gap-6">
-                    <h4 className="font-serif text-lg lg:text-xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 lg:gap-6">
+                    <h4 className="font-serif text-base sm:text-lg lg:text-xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors flex-1">
                       {pub.title}
                     </h4>
-                    <p className="font-mono text-xs uppercase tracking-widest text-[#737373] mt-2 lg:mt-0">
+                    <p className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#737373] mt-2 sm:mt-0 flex-shrink-0">
                       {pub.year}
                     </p>
                   </div>
@@ -77,7 +77,7 @@ export default function PublicationsWriting() {
                       {pub.methodologies.map((method, idx) => (
                         <span
                           key={idx}
-                          className="font-mono text-xs px-3 py-1 border border-[#e5e5e5] rounded text-[#171717]"
+                          className="font-mono text-[10px] sm:text-xs px-2 sm:px-3 py-1 border border-[#e5e5e5] rounded text-[#171717] break-words"
                         >
                           [{method}]
                         </span>
@@ -87,14 +87,14 @@ export default function PublicationsWriting() {
 
                   {/* Technologies Tags */}
                   <div className="space-y-2">
-                    <p className="font-mono text-xs uppercase tracking-widest text-[#737373]">
+                    <p className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#737373]">
                       Technologies
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {pub.technologies.map((tech, idx) => (
                         <span
                           key={idx}
-                          className="font-mono text-xs px-3 py-1 border border-[#e5e5e5] rounded text-[#171717]"
+                          className="font-mono text-[10px] sm:text-xs px-2 sm:px-3 py-1 border border-[#e5e5e5] rounded text-[#171717] break-words"
                         >
                           [{tech}]
                         </span>

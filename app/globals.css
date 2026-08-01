@@ -40,10 +40,10 @@
     @apply border-gray-200;
   }
   body {
-    @apply bg-[#fcfbf9] text-[#171717] font-sans;
+    @apply bg-[#fcfbf9] text-[#171717] font-sans overflow-x-hidden;
   }
   html {
-    @apply bg-[#fcfbf9] scroll-smooth;
+    @apply bg-[#fcfbf9] scroll-smooth overflow-x-hidden;
   }
 }
 

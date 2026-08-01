@@ -26,12 +26,12 @@ export default function WorkGrid() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <section id="work" className="py-32 px-6 lg:px-12 max-w-6xl mx-auto">
-      <h2 className="font-serif text-5xl lg:text-6xl font-light text-[#171717] mb-20 text-balance">
+    <section id="work" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-12 sm:mb-20 text-balance">
         Recent Work
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+      <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -73,7 +73,7 @@ export default function WorkGrid() {
 
             {/* Title & Category */}
             <div className="space-y-2">
-              <h3 className="font-serif text-2xl lg:text-3xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors">
+              <h3 className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors">
                 {project.title}
               </h3>
               <div className="flex items-center gap-3">

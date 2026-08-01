@@ -25,11 +25,11 @@ export default function CoreCapabilities() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0)
 
   return (
-    <section className="py-32 px-6 lg:px-12 max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+    <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
         {/* Sticky Header */}
         <div className="lg:sticky lg:top-32 lg:h-fit">
-          <h2 className="font-serif text-5xl lg:text-6xl font-light text-[#171717] mb-6 text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-4 sm:mb-6 text-balance">
             Core Capabilities
           </h2>
           <a
@@ -50,8 +50,8 @@ export default function CoreCapabilities() {
               }`}
               onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
             >
-              <div className="p-6 flex items-center justify-between">
-                <h3 className={`font-serif text-xl lg:text-2xl font-light transition-colors ${
+              <div className="p-4 sm:p-6 flex items-center justify-between gap-3">
+                <h3 className={`font-serif text-base sm:text-lg md:text-xl lg:text-2xl font-light transition-colors ${
                   expandedIndex === index ? 'text-[#4338ca]' : 'text-[#737373] group-hover:text-[#171717]'
                 }`}>
                   {cap.title}
@@ -71,7 +71,7 @@ export default function CoreCapabilities() {
                   expandedIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <div className="px-6 pb-6 pt-0">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-0">
                   <div className="flex flex-wrap gap-2">
                     {cap.tags.map((tag, i) => (
                       <span

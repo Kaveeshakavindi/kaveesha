@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { User } from 'lucide-react'
 
 export default function Hero() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
@@ -31,29 +32,30 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-4xl text-center space-y-12">
-        {/* Main Headline */}
-        <div className="space-y-6">
-          <h1 className="font-serif text-6xl lg:text-7xl xl:text-8xl font-light leading-tight text-[#171717]" style={{ lineHeight: 0.85 }}>
-            Designing intelligence that <span className="italic">understands</span> people.
-          </h1>
+      <div className="relative z-10 max-w-2xl text-center space-y-12">
+        {/* Profile Image Placeholder */}
+        <div className="flex justify-center">
+          <div className="w-48 h-48 rounded-full border border-[#e5e5e5] bg-[#f5f5f5] flex items-center justify-center">
+            <User size={80} className="text-[#d4d4d4]" strokeWidth={1.5} />
+          </div>
+        </div>
 
-          {/* Subheading */}
-          <p className="font-sans text-base lg:text-lg text-[#737373] max-w-3xl mx-auto">
-            Data Scientist exploring Human-Centered AI, Theory of Mind & HCI
+        {/* Subtitle */}
+        <div>
+          <p className="font-sans text-base lg:text-lg text-[#737373] tracking-wide">
+            Researcher | Human Centered AI | Theory of Mind
           </p>
         </div>
 
-        {/* Tech Stack Tags */}
-        <div className="flex flex-wrap gap-3 justify-center pt-6">
-          {['PYTHON', 'PYTORCH', 'TENSORFLOW', 'SCIKIT-LEARN', 'SQL'].map((tech) => (
-            <span
-              key={tech}
-              className="font-mono text-xs lg:text-sm uppercase tracking-widest px-4 py-2 border border-[#e5e5e5] rounded-full text-[#171717]"
-            >
-              {tech}
-            </span>
-          ))}
+        {/* Intro Text */}
+        <div className="space-y-6">
+          <p className="font-sans text-base leading-relaxed text-[#171717] text-pretty">
+            Hi! I&apos;m Kaveesha Fernando, a researcher working on Human-Centered AI, Theory of Mind, and Human-Computer Interaction. I&apos;m drawn to conversations with people from different backgrounds because they constantly reshape how I see the world.
+          </p>
+
+          <p className="font-sans text-base leading-relaxed text-[#171717] text-pretty">
+            I enjoy a bit of chaos, the kind that comes from different ideas, opinions and critiques colliding. I like to collect those perspectives, sit with them and connect them in beautiful ways. Sometimes they become research, sometimes software, sometimes writing or art and often they become questions about how we can build AI that understands people a little better without losing sight of what makes us human.
+          </p>
         </div>
       </div>
 

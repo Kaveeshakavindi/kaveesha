@@ -5,7 +5,7 @@ const images = ['/1.png', '2.png', '3.png', '4.png', '5.png', '6.png']
 
 export default function ArtGallery() {
     return (
-        <section id="publications" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+        <section id="publications" className="py-20 sm:py-32 px-10 sm:px-10 lg:px-12 max-w-6xl mx-auto">
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-12 sm:mb-20 text-balance">
                 Art Gallery
             </h2>

@@ -21,7 +21,7 @@ export default function CoreCapabilities() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0)
 
   return (
-    <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+    <section className="py-20 sm:py-32 px-10 sm:px-10 lg:px-12 max-w-6xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
         {/* Sticky Header */}
         <div className="lg:sticky lg:top-32 lg:h-fit">
@@ -61,7 +61,7 @@ export default function CoreCapabilities() {
                   expandedIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-0">
+                <div className="px-4 sm:px-10 pb-4 sm:pb-6 pt-0">
                   <div className="flex flex-wrap gap-2">
                     {cap.tags.map((tag, i) => (
                       <span

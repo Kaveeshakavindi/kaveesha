@@ -24,7 +24,7 @@ export default function Footer() {
         }}
       />
 
-      <div className="relative z-10 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+      <div className="relative z-10 px-4 sm:px-10 lg:px-12 max-w-6xl mx-auto">
      
 
         {/* Contact Grid */}

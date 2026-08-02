@@ -19,6 +19,9 @@ export default function Home() {
     <main className="min-h-screen bg-[#fcfbf9]">
       <Hero />
       <QuoteBreak />
+       <ScrollReveal>
+        <PublicationsWriting />
+      </ScrollReveal>
       <ScrollReveal>
         <WorkGrid />
       </ScrollReveal>
@@ -27,9 +30,6 @@ export default function Home() {
       </ScrollReveal>
       <ScrollReveal>
         <CoreCapabilities />
-      </ScrollReveal>
-      <ScrollReveal>
-        <PublicationsWriting />
       </ScrollReveal>
       <ScrollReveal>
         <EducationCertifications />

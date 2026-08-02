@@ -25,7 +25,7 @@ const experiences = [
 
 export default function ExperienceTimeline() {
   return (
-    <section id="research" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+    <section id="research" className="py-20 sm:py-32 px-10 lg:px-12 max-w-6xl mx-auto">
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-12 sm:mb-20 text-balance">
         Experience
       </h2>
@@ -48,8 +48,11 @@ export default function ExperienceTimeline() {
 
             <ul className="space-y-2">
               {exp.highlights.map((highlight, i) => (
-                <li key={i} className="font-sans text-sm sm:text-base text-[#737373] leading-relaxed">
-                  • {highlight}
+                <li
+                  key={i}
+                  className="flex items-start font-sans text-[#737373] leading-relaxed"
+                >
+                  <span className="text-xs lg:text-sm">{highlight}</span>
                 </li>
               ))}
             </ul>

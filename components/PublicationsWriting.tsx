@@ -39,7 +39,7 @@ const blogs = [
 
 export default function PublicationsWriting() {
   return (
-    <section id="publications" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+    <section id="publications" className="py-20 sm:py-32 px-10 sm:px-10 lg:px-12 max-w-6xl mx-auto">
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-12 sm:mb-20 text-balance">
         Publications & Writing
       </h2>
@@ -62,12 +62,12 @@ export default function PublicationsWriting() {
                 <div className="pb-2 border-b border-[#e5e5e5] hover:border-[#4338ca] transition-colors space-y-4">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 lg:gap-6">
                     <div className='flex flex-col'>
-                    <h4 className="font-serif text-base sm:text-lg lg:text-xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors flex-1">
-                      {pub.title}
-                    </h4>
-                     <p className="font-mono text-[10px] sm:text-xs py-2 text-[#737373] mt-2 sm:mt-0 flex-shrink-0">
-                      {pub.description}
-                    </p>
+                      <h4 className="font-serif text-base sm:text-lg lg:text-xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors flex-1">
+                        {pub.title}
+                      </h4>
+                      <p className="font-mono text-[10px] sm:text-xs py-2 text-[#737373] mt-2 sm:mt-0 flex-shrink-0">
+                        {pub.description}
+                      </p>
                     </div>
                     <p className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#737373] mt-2 sm:mt-0 flex-shrink-0">
                       {pub.year}
@@ -81,7 +81,7 @@ export default function PublicationsWriting() {
 
         {/* Medium Articles */}
         <div id="writing">
-          <h3 className="font-mono text-sm uppercase tracking-widest text-[#737373] mb-8">
+          <h3 className="font-mono text-sm uppercase tracking-widest text-[#737373] mb-8 pt-8">
             Medium Articles
           </h3>
           <div className="space-y-3">
@@ -93,13 +93,17 @@ export default function PublicationsWriting() {
                 rel="noopener noreferrer"
                 className="block group"
               >
-                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
-                  <span className="font-mono text-xs uppercase tracking-widest text-[#737373] mt-1 min-w-fit">
-                    article
-                  </span>
-                  <p className="font-sans text-base text-[#171717] group-hover:text-[#4338ca] transition-colors">
+                <div className="flex items-start  rounded-lg hover:bg-gray-50 transition-colors py-3 border rounded-none">
+
+                  <p className="font-sans text-xs text-[#171717] group-hover:text-[#4338ca] transition-colors px-4">
                     {blog.title}
                   </p>
+                  <div className='flex-grow'></div>
+                  <div className='pr-4 group-hover:text-[#4338ca]'>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </div>
                 </div>
               </Link>
             ))}

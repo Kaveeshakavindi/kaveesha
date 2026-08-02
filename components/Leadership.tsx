@@ -2,7 +2,7 @@
 
 const leadership = [
   { role: 'Marketing Executive', org: 'Women In Tech® Sri Lanka', period: 'Feb 2026 – Jun 2026' },
-  { role: 'Creative Designer', org: 'Teens in AI Sri Lanka', period: 'Dec 2025 – Mar 2026' },
+  { role: 'Creative Designer/Moderator', org: 'Teens in AI Sri Lanka', period: 'Dec 2025 – Mar 2026' },
   { role: 'Volunteer', org: 'Women In Tech® Sri Lanka', period: 'Oct 2025 – Feb 2026' },
   { role: 'Zone Director', org: 'Leo District 306A1', period: '2023–24' },
   { role: 'Secretary', org: 'Leo Club of IIT', period: '2022–23 — "Top 5 Secretary" award' },

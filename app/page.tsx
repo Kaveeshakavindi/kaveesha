@@ -11,15 +11,9 @@ import EducationCertifications from '@/components/EducationCertifications'
 import Leadership from '@/components/Leadership'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
+import ArtGallery from '@/components/ArtGallery'
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) return null
 
   return (
     <main className="min-h-screen bg-[#fcfbf9]">
@@ -42,6 +36,9 @@ export default function Home() {
       </ScrollReveal>
       <ScrollReveal>
         <Leadership />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ArtGallery />
       </ScrollReveal>
       <Footer />
     </main>

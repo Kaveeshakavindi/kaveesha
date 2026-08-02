@@ -5,7 +5,8 @@ import Link from 'next/link'
 const publications = [
   {
     type: 'Publication',
-    title: 'Synapse: Greenwashing Detection in Corporate ESG Reports',
+    title: 'Greenwashing Detection in Corporate ESG Reports through Neurosymbolic AI & Counterfactual Reasoning',
+    description: 'Future Technologies Conference 2026',
     year: '2026',
     methodologies: ['Neuro-Symbolic AI', 'Counterfactual Reasoning', 'Causality', 'Ontology Design', 'RAG'],
     technologies: ['Mistral 7B', 'Claude Sonnet 4', 'GPT-4o', 'Python', 'FAISS', 'LangChain', 'Ollama'],
@@ -20,7 +21,7 @@ const blogs = [
   },
   {
     title: 'Let\'s escalate from beginner to intermediate in GraphQL',
-    link: 'https://medium.com/@kaveesha.20210431/lets-escalate-from-beginner-to-intermediate-in-graphql-part-i8eb4f87db08e',
+    link: 'https://medium.com/@kaveesha.20210431/lets-escalate-from-beginner-to-intermediate-in-graphql-part-i-8eb4f87db08e',
   },
   {
     title: 'Understanding dynamic routing in NextJS',
@@ -32,7 +33,7 @@ const blogs = [
   },
   {
     title: 'Keys, Ciphers and Code Breakers: A Guide to Cryptography',
-    link: 'https://medium.com/@kaveesha.20210431/keys-ciphers-and-codebreakers-guide-to-cryptography3282bdbfc4b2',
+    link: 'https://medium.com/@kaveesha.20210431/keys-ciphers-and-codebreakers-guide-to-cryptography-3282bdbfc4b2',
   },
 ]
 
@@ -58,48 +59,19 @@ export default function PublicationsWriting() {
                 rel="noopener noreferrer"
                 className="block group"
               >
-                <div className="pb-6 border-b border-[#e5e5e5] hover:border-[#4338ca] transition-colors space-y-4">
+                <div className="pb-2 border-b border-[#e5e5e5] hover:border-[#4338ca] transition-colors space-y-4">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 lg:gap-6">
+                    <div className='flex flex-col'>
                     <h4 className="font-serif text-base sm:text-lg lg:text-xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors flex-1">
                       {pub.title}
                     </h4>
+                     <p className="font-mono text-[10px] sm:text-xs py-2 text-[#737373] mt-2 sm:mt-0 flex-shrink-0">
+                      {pub.description}
+                    </p>
+                    </div>
                     <p className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#737373] mt-2 sm:mt-0 flex-shrink-0">
                       {pub.year}
                     </p>
-                  </div>
-
-                  {/* Methodologies Tags */}
-                  <div className="space-y-2">
-                    <p className="font-mono text-xs uppercase tracking-widest text-[#737373]">
-                      Methodologies
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {pub.methodologies.map((method, idx) => (
-                        <span
-                          key={idx}
-                          className="font-mono text-[10px] sm:text-xs px-2 sm:px-3 py-1 border border-[#e5e5e5] rounded text-[#171717] break-words"
-                        >
-                          [{method}]
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Technologies Tags */}
-                  <div className="space-y-2">
-                    <p className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#737373]">
-                      Technologies
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {pub.technologies.map((tech, idx) => (
-                        <span
-                          key={idx}
-                          className="font-mono text-[10px] sm:text-xs px-2 sm:px-3 py-1 border border-[#e5e5e5] rounded text-[#171717] break-words"
-                        >
-                          [{tech}]
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </Link>

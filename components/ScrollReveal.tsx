@@ -35,7 +35,7 @@ export default function ScrollReveal({ children, delay = 0 }: ScrollRevealProps)
   }, [delay])
 
   return (
-    <div ref={ref} className="opacity-0">
+    <div ref={ref} >
       {children}
     </div>
   )

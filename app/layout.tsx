@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Data Scientist exploring Human-Centered AI, Theory of Mind & HCI. Designing intelligence that understands people.',
   generator: 'v0.app',
   openGraph: {
-    title: 'Kaveesha Fernando — Data Scientist',
+    title: 'Kaveesha Fernando',
     description: 'Designing intelligence that understands people.',
     type: 'website',
   },

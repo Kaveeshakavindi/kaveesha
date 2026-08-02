@@ -49,7 +49,7 @@ export default function EducationCertifications() {
             {certifications.map((cert, index) => (
               <span
                 key={index}
-                className="font-mono text-[10px] sm:text-xs uppercase tracking-widest px-2.5 sm:px-4 py-1.5 sm:py-2 bg-[#e0e7ff] text-[#4338ca] rounded-full"
+                className="font-mono text-[10px] sm:text-xs uppercase tracking-widest px-2.5 sm:px-4 py-1.5 sm:py-2 bg-[#e0e7ff] text-[#4338ca] "
               >
                 {cert}
               </span>

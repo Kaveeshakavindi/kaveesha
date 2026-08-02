@@ -4,21 +4,17 @@ import { useState } from 'react'
 
 const capabilities = [
   {
-    title: 'Data Science & ML',
-    tags: ['EDA', 'Feature Engineering', 'Model Evaluation', 'Statistical Analysis', 'Ontology Design'],
+    title: 'Artificial Intelligence',
+    tags: ['Causal Inference', 'Agentic Systems', 'Knowledge Representation', 'XAI'],
   },
   {
-    title: 'Languages & Tools',
-    tags: ['Python', 'SQL', 'Pandas', 'NumPy', 'Git', 'C#', 'JavaScript', 'OWLReady2'],
+    title: 'Languages',
+    tags: ['Python', 'SQL','C#', 'TypeScript'],
   },
   {
-    title: 'ML/AI Frameworks',
-    tags: ['Scikit-learn', 'TensorFlow', 'PyTorch'],
-  },
-  {
-    title: 'Cloud & Data Engineering',
-    tags: ['AWS Cloud Essentials', 'Azure Data Engineering', 'ETL Pipelines', 'Data Warehousing'],
-  },
+    title: 'Tools',
+    tags: ['Langchain', 'Ollama', 'GitHub', 'Docker'],
+  }
 ]
 
 export default function CoreCapabilities() {
@@ -32,16 +28,10 @@ export default function CoreCapabilities() {
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#171717] mb-4 sm:mb-6 text-balance">
             Core Capabilities
           </h2>
-          <a
-            href="#"
-            className="font-mono text-sm uppercase tracking-widest text-[#4338ca] hover:text-[#171717] transition-colors flex items-center gap-2"
-          >
-            See full resume →
-          </a>
         </div>
 
         {/* Accordion */}
-        <div className="lg:col-span-2 space-y-0 border border-[#e5e5e5] rounded-2xl overflow-hidden">
+        <div className="lg:col-span-2 space-y-0 border border-[#e5e5e5]  overflow-hidden">
           {capabilities.map((cap, index) => (
             <div
               key={index}
@@ -76,7 +66,7 @@ export default function CoreCapabilities() {
                     {cap.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="font-mono text-xs uppercase tracking-widest px-3 py-1 bg-[#e0e7ff] text-[#4338ca] rounded-full"
+                        className="font-mono text-xs uppercase tracking-widest px-3 py-1 bg-[#e0e7ff] text-[#4338ca] "
                       >
                         [{tag}]
                       </span>

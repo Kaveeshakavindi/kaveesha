@@ -8,7 +8,7 @@ const projects = [
     title: 'PHQ & GAD Score Regression',
     category: 'ML / PSYCHOLOGY',
     description:
-      'EDA and feature engineering on Experience Sampling Method data to predict anxiety (GAD) and depression (PHQ) scores from momentary thought patterns; Random Forest Regressor achieving R² = 0.7335 (10-fold CV).',
+      'Predicting baseline anxiety (GAD) and depression (PHQ) scores from momentary negative thought patterns using EMA data.',
     link: 'https://github.com/Kaveeshakavindi/PHQ-GAD-Score-Regression',
     color: '#e0e7ff',
   },
@@ -16,7 +16,7 @@ const projects = [
     title: 'Stellar Class Prediction',
     category: 'ML / ASTRONOMY',
     description:
-      'Cleaned and preprocessed astronomical survey data (robust scaling, one-hot encoding); Random Forest classifier, 96% accuracy, 0.96 weighted F1 on Kaggle Playground Series S6E6.',
+      'This model was built to classify steller class as a submission for the the www.kaggle.com Predicting Stellar Class Playground Series - Season 6 Episode 6 competition',
     link: 'https://github.com/Kaveeshakavindi/steller_class_prediction',
     color: '#fef3c7',
   },
@@ -42,14 +42,14 @@ export default function WorkGrid() {
             onMouseLeave={() => setHoveredIndex(null)}
           >
             <div
-              className="group cursor-pointer h-full border border-[#e5e5e5] rounded-xl p-5 sm:p-6 transition-all duration-500 ease-out transform hover:border-[#4338ca] hover:shadow-md hover:-translate-y-1 relative overflow-hidden"
+              className="group cursor-pointer h-full border border-[#e5e5e5]  p-5 sm:p-6 transition-all duration-500 ease-out transform hover:border-[#4338ca] hover:shadow-md hover:-translate-y-1 relative overflow-hidden"
               style={{
                 backgroundColor: project.color,
               }}
             >
               {/* Animated background orb */}
               <div
-                className="absolute -top-8 -right-8 w-24 h-24 rounded-full blur-2xl opacity-20 transition-transform duration-500 group-hover:scale-110"
+                className="absolute -top-8 -right-8 w-24 h-24  blur-2xl opacity-20 transition-transform duration-500 group-hover:scale-110"
                 style={{
                   background: '#4338ca',
                   pointerEvents: 'none',
@@ -74,7 +74,7 @@ export default function WorkGrid() {
 
                 {/* View Pill */}
                 <div
-                  className="inline-flex w-fit mt-auto px-3 sm:px-4 py-1.5 bg-white text-[#171717] font-mono text-[10px] sm:text-xs uppercase tracking-widest rounded-full font-medium transition-all duration-500"
+                  className="inline-flex w-fit mt-auto px-3 sm:px-4 py-1.5 bg-white text-[#171717] font-mono text-[10px] sm:text-xs uppercase tracking-widest  font-medium transition-all duration-500"
                   style={{
                     opacity: hoveredIndex === index ? 1 : 0.6,
                     transform: hoveredIndex === index ? 'translateY(0)' : 'translateY(0.5rem)',

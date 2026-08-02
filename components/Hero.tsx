@@ -18,13 +18,17 @@ export default function Hero() {
 
         {/* Profile Image Placeholder - Smaller */}
         <div className="flex justify-center pt-2 sm:pt-4">
-          <div className="w-20 sm:w-24 md:w-28 h-20 sm:h-24 md:h-28 rounded-full border border-[#e5e5e5] bg-[#f5f5f5] flex items-center justify-center flex-shrink-0">
-            <User size={32} className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#d4d4d4]" strokeWidth={1.5} />
+          <div className="w-20 sm:w-24 md:w-28 h-20 sm:h-24 md:h-28 rounded-full overflow-hidden border border-[#e5e5e5] bg-[#f5f5f5] flex items-center justify-center flex-shrink-0">
+            <img
+              src="/me.jpg"
+              alt="Kaveesha Fernando"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
         </div>
 
         {/* Body Text in JetBrains Mono */}
-        <p className="font-mono text-xs sm:text-sm leading-relaxed text-[#171717] text-pretty pt-2 sm:pt-4">
+        <p className="text-xs sm:text-sm leading-relaxed text-[#171717] text-pretty pt-2 sm:pt-4">
           I enjoy a bit of chaos, the kind that comes from different ideas, opinions and critiques colliding. I like to collect those perspectives, sit with them and connect them in beautiful ways. Sometimes they become research, sometimes software, sometimes writing or art and often they become questions about how we can build AI that understands people a little better without losing sight of what makes us human.
         </p>
       </div>

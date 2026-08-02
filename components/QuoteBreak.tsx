@@ -1,44 +1,15 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
-
 export default function QuoteBreak() {
-  const ref = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('scroll-reveal')
-          observer.unobserve(entry.target)
-        }
-      },
-      { threshold: 0.3 }
-    )
-
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
-      }
-    }
-  }, [])
-
   return (
-    <section ref={ref} className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-4xl mx-auto opacity-0 text-center space-y-6 sm:space-y-8">
-      <blockquote className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl italic font-light text-[#171717] leading-relaxed">
-        "All that we are is the result of what we have thought."
+    <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+      <blockquote className="font-serif text-l sm:text-3xl md:text-4xl lg:text-5xl italic font-light text-[#171717] leading-relaxed">
+        "If the doors of perception were cleansed everything would appear to man as it is, infinite."
       </blockquote>
 
       <div className="space-y-2">
         <p className="font-mono text-xs uppercase tracking-widest text-[#737373]">
-          — Gautama Buddha
-        </p>
-        <p className="font-mono text-xs uppercase tracking-widest text-[#737373]">
-          [ON THOUGHT & COGNITION]
+          — William Blake
         </p>
       </div>
     </section>

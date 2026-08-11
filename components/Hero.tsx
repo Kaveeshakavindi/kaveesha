@@ -13,7 +13,7 @@ export default function Hero() {
 
         {/* Monospace Subtitle */}
         <p className="font-mono py-4 text-[10px] sm:text-xs uppercase tracking-widest text-[#737373] leading-tight break-words">
-          Researcher | Human-Centered AI | XAI
+          Software Engineer
         </p>
 
         {/* Profile Image Placeholder - Smaller */}

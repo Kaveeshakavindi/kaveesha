@@ -11,6 +11,8 @@ const publications = [
     methodologies: ['Neuro-Symbolic AI', 'Counterfactual Reasoning', 'Causality', 'Ontology Design', 'RAG'],
     technologies: ['Mistral 7B', 'Claude Sonnet 4', 'GPT-4o', 'Python', 'FAISS', 'LangChain', 'Ollama'],
     link: '#',
+    downloadUrl: '/Synapse_Cam_Ready_V5.pdf',
+    downloadName: 'Synapse_Cam_Ready_V5.pdf',
   },
 ]
 
@@ -52,14 +54,13 @@ export default function PublicationsWriting() {
           </h3>
           <div className="space-y-8">
             {publications.map((pub, index) => (
-              <Link
-                key={index}
-                href={pub.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block group"
-              >
-                <div className="pb-2 border-b border-[#e5e5e5] hover:border-[#4338ca] transition-colors space-y-4">
+              <div key={index} className="group pb-2 border-b border-[#e5e5e5] hover:border-[#4338ca] transition-colors space-y-4">
+                <Link
+                  href={pub.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 lg:gap-6">
                     <div className='flex flex-col'>
                       <h4 className="font-serif text-base sm:text-lg lg:text-xl font-light text-[#171717] group-hover:text-[#4338ca] transition-colors flex-1">
@@ -73,8 +74,20 @@ export default function PublicationsWriting() {
                       {pub.year}
                     </p>
                   </div>
-                </div>
-              </Link>
+                </Link>
+                {pub.downloadUrl && (
+                  <a
+                    href={pub.downloadUrl}
+                    download={pub.downloadName ?? true}
+                    className="inline-flex items-center gap-2 font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#737373] hover:text-[#4338ca] transition-colors pb-2"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    Download PDF
+                  </a>
+                )}
+              </div>
             ))}
           </div>
         </div>

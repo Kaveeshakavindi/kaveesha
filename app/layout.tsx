@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Kaveesha Fernando — Data Scientist',
+  title: 'Kaveesha Fernando',
   description: 'Data Scientist exploring Human-Centered AI, Theory of Mind & HCI. Designing intelligence that understands people.',
   generator: 'v0.app',
   openGraph: {

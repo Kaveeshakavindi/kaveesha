@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#fcfbf9]">
       <Hero />
-      <QuoteBreak />
+      {/* <QuoteBreak /> */}
        <ScrollReveal>
         <PublicationsWriting />
       </ScrollReveal>

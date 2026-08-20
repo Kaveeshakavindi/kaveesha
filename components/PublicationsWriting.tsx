@@ -13,7 +13,7 @@ const publications = [
     link: '#',
     downloadUrl: '/synapse_.pdf',
     downloadName: 'synapse_.pdf',
-  },
+  }
 ]
 
 const blogs = [

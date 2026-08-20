@@ -4,12 +4,16 @@ import { useState } from 'react'
 
 const capabilities = [
   {
+    title: 'Software Engineering',
+    tags: ['ASP.NET MVC', 'RESTful APIs'],
+  },
+  {
     title: 'Artificial Intelligence',
-    tags: ['Causal Inference', 'Agentic Systems', 'Knowledge Representation', 'XAI'],
+    tags: ['Causal Inference', 'Agentic Systems', 'Embodied AI', 'XAI'],
   },
   {
     title: 'Languages',
-    tags: ['Python', 'SQL','C#', 'TypeScript'],
+    tags: ['C#','Python', 'SQL', 'TypeScript'],
   },
   {
     title: 'Tools',

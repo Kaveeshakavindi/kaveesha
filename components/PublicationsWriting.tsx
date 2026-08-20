@@ -11,8 +11,8 @@ const publications = [
     methodologies: ['Neuro-Symbolic AI', 'Counterfactual Reasoning', 'Causality', 'Ontology Design', 'RAG'],
     technologies: ['Mistral 7B', 'Claude Sonnet 4', 'GPT-4o', 'Python', 'FAISS', 'LangChain', 'Ollama'],
     link: '#',
-    downloadUrl: '/Synapse_Cam_Ready_V5.pdf',
-    downloadName: 'Synapse_Cam_Ready_V5.pdf',
+    downloadUrl: '/synapse_.pdf',
+    downloadName: 'synapse_.pdf',
   },
 ]
 

@@ -27,10 +27,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Body Text in JetBrains Mono */}
-        <p className="text-sm leading-relaxed text-[#171717] text-pretty pt-2 sm:pt-4">
-          I enjoy a bit of chaos, the kind that comes from different ideas, opinions and critiques colliding. I like to collect those perspectives, sit with them and connect them in beautiful ways. Sometimes they become research, sometimes software, sometimes writing or art and often they become questions about how we can build AI that understands people a little better without losing sight of what makes us human.
-        </p>
       </div>
     </section>
   )

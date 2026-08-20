@@ -14,7 +14,7 @@ const experiences = [
   },
   {
     role: 'Mobile Engineering Intern',
-    company: 'Axiata Digital Labs',
+    company: 'Axonect',
     period: 'Jul 2023 – Jun 2024',
     highlights: [
       'Contributed to Celcom Life and DMS Sales apps (React Native, Redux)',

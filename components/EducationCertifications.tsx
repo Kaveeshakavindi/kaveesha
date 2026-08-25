@@ -3,7 +3,7 @@
 const education = {
   degree: 'BEng. Software Engineering (Hons) with Placement',
   university: 'University of Westminster',
-  period: 'Sep 2021 – Oct 2026 (Part-time)',
+  period: 'Sep 2021 – Aug 2026',
 }
 
 const certifications = [

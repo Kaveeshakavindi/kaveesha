@@ -6,10 +6,6 @@ const experiences = [
     company: 'Seylan Bank PLC',
     period: 'Sep 2024 – Jun 2026',
     highlights: [
-      'Built ETL pipeline for Credit Card Bureau (CRIB) data into MS SQL Server (+50% efficiency)',
-      'Multithreaded reporting system integrating AS400 DB2 (+60% efficiency)',
-      'Migrated VB.NET legacy payment system to React + ASP.NET MVC with JWT (+80% efficiency/usability)',
-      'Maintained AS400 DB2 schemas for teller systems',
     ],
   },
   {
@@ -17,8 +13,6 @@ const experiences = [
     company: 'Axonect',
     period: 'Jul 2023 – Jun 2024',
     highlights: [
-      'Contributed to Celcom Life and DMS Sales apps (React Native, Redux)',
-      'QA testing, UAT, API integration, and debugging for production deployments',
     ],
   },
 ]

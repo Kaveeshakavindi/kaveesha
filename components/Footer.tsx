@@ -81,12 +81,12 @@ export default function Footer() {
                 <Mail size={20} className="w-5 h-5 sm:w-6 sm:h-6" />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/kaveesha-fernando-b94301224/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/50 hover:text-[#4338ca] transition-colors"
               >
-                <Share2 size={20} className="w-5 h-5 sm:w-6 sm:h-6" />
+                <ContactIcon size={20} className="w-5 h-5 sm:w-6 sm:h-6" />
               </Link>
             </div>
           </div>

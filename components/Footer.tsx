@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { GitBranch, Mail, Share2 } from 'lucide-react'
+import { ContactIcon, GitBranch, Mail, Share2 } from 'lucide-react'
 
 export default function Footer() {
   return (

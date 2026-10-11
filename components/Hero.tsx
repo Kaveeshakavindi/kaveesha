@@ -1,12 +1,17 @@
 'use client'
 
-import { FaLinkedin, FaGithub, FaMedium, FaBehance } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaMedium, FaBehance, FaEnvelope } from 'react-icons/fa';
 
 export default function Hero() {
   return (
     <section className="relative pt-20 pb-20 sm:pt-32 px-12 lg:px-12 overflow-hidden flex flex-col justify-center items-center bg-[#fcfbf9]">
       <div className="relative z-10 max-w-2xl text-center  sm:space-y-8">
         <div className="flex justify-center items-center gap-4 min-h-[60px] w-full">
+          
+          <a href="mailto:kaveeshafernando3@gmail.com" aria-label="LinkedIn" className="group">
+            <FaEnvelope className="h-5 w-5 text-zinc-600 hover:text-red-600 transition-colors" />
+          </a>
+
           {/* LinkedIn */}
           <a href="https://www.linkedin.com/in/kaveesha-fernando-b94301224/" aria-label="LinkedIn" className="group">
             <FaLinkedin className="h-5 w-5 text-zinc-600 hover:text-blue-600 transition-colors" />

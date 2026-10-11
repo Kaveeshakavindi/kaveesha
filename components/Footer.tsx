@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ContactIcon, GitBranch, Mail, Share2 } from 'lucide-react'
+import { FaLinkedin, FaGithub, FaMedium, FaBehance } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -25,7 +25,7 @@ export default function Footer() {
       />
 
       <div className="relative z-10 px-4 sm:px-10 lg:px-12 max-w-6xl mx-auto">
-     
+
 
         {/* Contact Grid */}
         <div className="grid grid-cols-1 gap-8 sm:gap-10 md:grid-cols-3 mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-white border-opacity-10">
@@ -34,7 +34,7 @@ export default function Footer() {
             <h3 className="font-mono text-xs uppercase tracking-widest text-gray-400 mb-3 sm:mb-4">
               Location
             </h3>
-            <p className="font-sans text-base sm:text-sm text-white/50">Panadura, Sri Lanka</p>
+            <p className="font-sans text-base sm:text-sm text-white/50">Sri Lanka</p>
           </div>
 
           {/* Contact */}
@@ -49,12 +49,6 @@ export default function Footer() {
               >
                 kaveeshafernando3@gmail.com
               </a>
-              <a
-                href="tel:+94716945834"
-                className="block font-sans text-sm sm:text-sm text-white/50 hover:text-[#4338ca] transition-colors"
-              >
-                +94 71 694 5834
-              </a>
             </div>
           </div>
 
@@ -63,31 +57,26 @@ export default function Footer() {
             <h3 className="font-mono text-xs uppercase tracking-widest text-gray-400 mb-3 sm:mb-4">
               Social
             </h3>
-            <div className="flex gap-6 justify-center">
-              <Link
-                href="https://github.com/Kaveeshakavindi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/50 hover:text-[#4338ca] transition-colors"
-              >
-                <GitBranch size={20} className="w-5 h-5 sm:w-6 sm:h-6" />
-              </Link>
-              <Link
-                href="https://medium.com/@kaveesha.20210431"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/50 hover:text-[#4338ca] transition-colors"
-              >
-                <Mail size={20} className="w-5 h-5 sm:w-6 sm:h-6" />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/kaveesha-fernando-b94301224/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/50 hover:text-[#4338ca] transition-colors"
-              >
-                <GitBranch size={20} className="w-5 h-5 sm:w-6 sm:h-6" />
-              </Link>
+            <div className="flex justify-center items-center gap-4 min-h-[60px] w-full">
+              {/* LinkedIn */}
+              <a href="https://www.linkedin.com/in/kaveesha-fernando-b94301224/" aria-label="LinkedIn" className="group">
+                <FaLinkedin className="h-5 w-5 text-zinc-600 hover:text-blue-600 transition-colors" />
+              </a>
+
+              {/* GitHub */}
+              <a href="https://github.com/Kaveeshakavindi" aria-label="GitHub" className="group">
+                <FaGithub className="h-5 w-5 text-zinc-600 hover:text-white dark:hover:text-white transition-colors" />
+              </a>
+
+              {/* Medium */}
+              <a href="https://medium.com/@kaveesha.20210431" aria-label="Medium" className="group">
+                <FaMedium className="h-5 w-5 text-zinc-600 hover:text-white dark:hover:text-white transition-colors" />
+              </a>
+
+              {/* Behance */}
+              <a href="https://www.behance.net/kaveeshfernand" aria-label="Behance" className="group">
+                <FaBehance className="h-5 w-5 text-zinc-600 hover:text-cyan-600 transition-colors" />
+              </a>
             </div>
           </div>
         </div>

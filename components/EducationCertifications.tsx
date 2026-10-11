@@ -7,11 +7,9 @@ const education = {
 }
 
 const certifications = [
+  'Certified Scrum Master (CSM) — Scrum Alliance',
   'Python for Data Science, AI & Development — IBM',
   'Microsoft Azure for Data Engineering',
-  'AWS Cloud Essentials',
-  'IBM i (AS/400) ILE RPG/400 Programming — ESOFT',
-  'Certified Scrum Master (CSM) — Scrum Alliance',
 ]
 
 export default function EducationCertifications() {

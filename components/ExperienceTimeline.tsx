@@ -10,7 +10,7 @@ const experiences = [
   },
   {
     role: 'Mobile Engineering Intern',
-    company: 'Axonect',
+    company: 'Axiata Digital Labs (Axonect)',
     period: 'Jul 2023 – Jun 2024',
     highlights: [
     ],

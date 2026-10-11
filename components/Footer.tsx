@@ -86,7 +86,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-white/50 hover:text-[#4338ca] transition-colors"
               >
-                <ContactIcon size={20} className="w-5 h-5 sm:w-6 sm:h-6" />
+                <GitBranch size={20} className="w-5 h-5 sm:w-6 sm:h-6" />
               </Link>
             </div>
           </div>

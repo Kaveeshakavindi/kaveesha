@@ -20,7 +20,7 @@ const projects = [
     link: 'https://github.com/Kaveeshakavindi/pr-review-crew.git',
     color: '#e0e7ff',
   },
-   {
+  {
     title: 'Synapse',
     category: 'Agentic Systems / RAG / Research',
     description:
@@ -46,8 +46,15 @@ const projects = [
   },
 ]
 
+const INITIAL_COUNT = 6
+const MAX_COUNT = 12
+
 export default function WorkGrid() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const [showMore, setShowMore] = useState(false)
+
+  const visibleProjects = projects.slice(0, showMore ? MAX_COUNT : INITIAL_COUNT)
+  const hasMore = projects.length > INITIAL_COUNT && !showMore
 
   return (
     <section id="work" className="py-20 sm:py-0 sm:py-32 px-4 px-10 lg:px-12 max-w-6xl mx-auto">
@@ -56,7 +63,7 @@ export default function WorkGrid() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-        {projects.map((project, index) => (
+        {visibleProjects.map((project, index) => (
           <Link
             key={index}
             href={project.link}
@@ -110,7 +117,19 @@ export default function WorkGrid() {
             </div>
           </Link>
         ))}
+
       </div>
+      {hasMore && (
+        <div className="text-center pt-10">
+          <button
+            type="button"
+            onClick={() => setShowMore(true)}
+            className="font-sans text-xs sm:text-sm text-[#737373] hover:text-[#4338ca] transition-colors cursor-pointer"
+          >
+            see more ...
+          </button>
+        </div>
+      )}
     </section>
   )
 }

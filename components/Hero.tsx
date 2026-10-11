@@ -1,11 +1,32 @@
 'use client'
 
-import { User } from 'lucide-react'
+import { FaLinkedin, FaGithub, FaMedium, FaBehance } from 'react-icons/fa';
 
 export default function Hero() {
   return (
     <section className="relative pt-20 pb-20 sm:pt-32 px-12 lg:px-12 overflow-hidden flex flex-col justify-center items-center bg-[#fcfbf9]">
       <div className="relative z-10 max-w-2xl text-center  sm:space-y-8">
+        <div className="flex justify-center items-center gap-4 min-h-[60px] w-full">
+          {/* LinkedIn */}
+          <a href="https://www.linkedin.com/in/kaveesha-fernando-b94301224/" aria-label="LinkedIn" className="group">
+            <FaLinkedin className="h-5 w-5 text-zinc-600 hover:text-blue-600 transition-colors" />
+          </a>
+
+          {/* GitHub */}
+          <a href="https://github.com/Kaveeshakavindi" aria-label="GitHub" className="group">
+            <FaGithub className="h-5 w-5 text-zinc-600 hover:text-zinc-900 dark:hover:text-white transition-colors" />
+          </a>
+
+          {/* Medium */}
+          <a href="https://medium.com/@kaveesha.20210431" aria-label="Medium" className="group">
+            <FaMedium className="h-5 w-5 text-zinc-600 hover:text-black dark:hover:text-white transition-colors" />
+          </a>
+
+          {/* Behance */}
+          <a href="https://www.behance.net/kaveeshfernand" aria-label="Behance" className="group">
+            <FaBehance className="h-5 w-5 text-zinc-600 hover:text-cyan-600 transition-colors" />
+          </a>
+        </div>
         {/* Title */}
         <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-[#171717] space-y-0">
           Hi! I&apos;m <span className="italic">Kaveesha</span> Fernando
@@ -27,6 +48,13 @@ export default function Hero() {
           </div>
         </div>
 
+        <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#171717] ">
+          "
+        </h1>
+
+        <p className="font-mono text-[12px]  tracking-widest text-[#737373] ">
+          I am a Software Engineer passionate about creating structured, practical solutions by transforming ambiguous ideas. I would like to spend my free time volunteering or sketching on a digital canvas. I warmly welcome you to my portfolio. Have fun!
+        </p>
       </div>
     </section>
   )

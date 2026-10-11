@@ -20,10 +20,10 @@ export default function Home() {
       <Hero />
       {/* <QuoteBreak /> */}
        <ScrollReveal>
-        <PublicationsWriting />
-      </ScrollReveal>
-      <ScrollReveal>
         <WorkGrid />
+      </ScrollReveal>
+       <ScrollReveal>
+        <PublicationsWriting />
       </ScrollReveal>
       <ScrollReveal>
         <ExperienceTimeline />

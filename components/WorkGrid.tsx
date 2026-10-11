@@ -5,18 +5,42 @@ import Link from 'next/link'
 
 const projects = [
   {
+    title: 'Question to SQL AI Agent',
+    category: 'Multi Agentic Systems',
+    description:
+      'The project demonstrates an agent workflow where an LLM can observe a tool failure and recover from it rather than terminating after the first failed query.',
+    link: 'https://github.com/Kaveeshakavindi/question-to-sql-agent',
+    color: '#fef3c7',
+  },
+  {
+    title: 'PR Review Crew',
+    category: 'GitHub Apps / Agentic Systems',
+    description:
+      'PR Review Crew is a GitHub App that automatically reviews pull requests using an asynchronous processing pipeline and an AI code reviewer.',
+    link: 'https://github.com/Kaveeshakavindi/pr-review-crew.git',
+    color: '#e0e7ff',
+  },
+   {
+    title: 'Synapse',
+    category: 'Agentic Systems / RAG / Research',
+    description:
+      'Synapse is an web application that evaluates a company ESG claims and flags likely greenwashing ; sustainability marketing that outpaces the evidence behind it',
+    link: 'https://github.com/Kaveeshakavindi/Synapse.git',
+    color: '#e0e7ff',
+  },
+  {
     title: 'PHQ & GAD Score Regression',
     category: 'ML / PSYCHOLOGY',
     description:
       'Predicting baseline anxiety (GAD) and depression (PHQ) scores from momentary negative thought patterns using EMA data.',
     link: 'https://github.com/Kaveeshakavindi/PHQ-GAD-Score-Regression',
-    color: '#e0e7ff',
+    color: '#fef3c7',
   },
   {
     title: 'Stellar Class Prediction',
     category: 'ML / ASTRONOMY',
     description:
-      'This model was built to classify steller class as a submission for the the www.kaggle.com Predicting Stellar Class Playground Series - Season 6 Episode 6 competition',
+      'This model was built to classify steller class as a submission for the the www.kaggle.com Predicting Stellar Class Playground Series - Season 6 Episode 6 competition.',
     link: 'https://github.com/Kaveeshakavindi/steller_class_prediction',
     color: '#fef3c7',
   },
@@ -68,7 +92,7 @@ export default function WorkGrid() {
                 </h3>
 
                 {/* One-line description */}
-                <p className="font-sans text-xs sm:text-sm text-[#737373] line-clamp-2 leading-relaxed flex-grow">
+                <p className="font-sans text-xs sm:text-sm text-[#737373]  leading-relaxed flex-grow">
                   {project.description}
                 </p>
 
